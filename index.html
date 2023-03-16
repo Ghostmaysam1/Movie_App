@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/5.jpg">
+    <title>Anime info</title>
+</head>
+<body>
+    <div class="App">
+
+        <div class="search-box">
+            <input id="search" type="text" placeholder="Name...">
+            <span id="searchBtn" class="material-symbols-outlined"> search </span>
+        </div>
+
+        <div class="container">
+            <div class="box-container bc-1">
+                <table>
+                    <tr>
+                        <th>Title</th>
+                        <td id="Title"></td>
+                    </tr>
+                    <tr>
+                        <th>Year</th>
+                        <td id="Year"></td>
+                    </tr>
+                    <tr>
+                        <th>Rated</th>
+                        <td id="Rated"></td>
+                    </tr>
+                    <tr>
+                        <th>Runtime</th>
+                        <td id="Runtime"></td>
+                    </tr>
+                    <tr>
+                        <th>Genre</th>
+                        <td id="Genre"></td>
+                    </tr>
+                    <tr>
+                        <th>IMDB</th>
+                        <td id="IMDB"></td>
+                    </tr>
+                    <tr>
+                        <th>Metacritic</th>
+                        <td id="Metacritic"></td>
+                    </tr>
+                    <tr>
+                        <th>Type</th>
+                        <td id="Type"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="box-container bc-2">
+                <div class="box img">
+                    <img src="./images/5blur.jpg" height="100%" id="Poster" alt="Poster">
+                    <h2 id="Name"></h2>
+                </div>
+                <div class="box title">
+                    <p id="Plot">
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>

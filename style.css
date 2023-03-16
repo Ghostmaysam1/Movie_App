@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./images/5blur.jpg');
+    background-size: cover;
+}
+
+body .App {
+    width: 70vmax;
+    height: 80%;
+    background-image: url('./images/5.jpg');
+    background-size: cover;
+    border-radius: .5rem;
+    box-shadow: 0 0 15px #0000007a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.App .search-box {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.App .search-box input {
+    width: 70%;
+    height: 35px;
+    outline: none;
+    color: #fff;
+    border-radius: 10rem;
+    background-color: rgba(37, 37, 37, .8);
+    padding: 5px 10px;
+    font-weight: 600;
+}
+
+.App .search-box span {
+    display: block;
+    margin-left: 5px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: rgba(37, 37, 37, .8);
+    border: 2px inset;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.App .container {
+    width: 100%;
+    padding: 10px;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.App .container .box-container {
+    width: 100px;
+    padding: 10px;
+    color: #fff;
+    overflow: auto;
+}
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+.App .container .box-container.bc-1 {
+    width: 40%;
+    background-color: rgba(37, 37, 37, .8);
+    border-radius: .5rem;
+    padding: 5px;
+}
+
+.App .container .box-container.bc-2 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.App .container .box-container.bc-1 table {
+    width: 100%;
+}
+
+.App .container .box-container table tr {
+    width: 100%;
+    margin: 15px 0;
+    display: block;
+}
+
+.App .container .box-container.bc-1 table tr th {
+    color: #f80;
+    text-align: left;
+}
+
+.App .container .box-container.bc-1 table tr td {
+    color: #eee;
+    text-align: right;
+    width: 100%;
+}
+
+.App .container .box-container .box {
+    padding: 5px 10px;
+    border-radius: .5rem;
+    overflow: auto;
+    width: 100%;
+    background-color: rgba(37, 37, 37, .8);
+}
+
+.App .container .box-container .box.title {
+    height: 70%;
+    padding: 10px;
+}
+
+.App .container .box-container .box.img {
+    height: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.App .container .box-container .box.img img {
+    max-width: 50%;
+    border-radius: .5rem;
+}
+
+.App .container .box-container .box.title h2 {
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: .5rem;
+    font-size: 4vmin;
+}
+
+
+.refresh {
+    width: 100%;
+    font-size: 2rem;
+    animation: spin 5s infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
