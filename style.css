@@ -131,6 +131,7 @@ body .App {
     overflow: auto;
     width: 100%;
     background-color: rgba(37, 37, 37, .8);
+    position: relative;
 }
 
 .App .container .box-container .box.title {
@@ -150,8 +151,8 @@ body .App {
     border-radius: .5rem;
 }
 
-.App .container .box-container .box.title h2 {
-    color: #fff;
+.App .container .box-container .box.img h2 {
+    color: #eee;
     padding: 5px 10px;
     border-radius: .5rem;
     font-size: 4vmin;
@@ -159,16 +160,20 @@ body .App {
 
 
 .refresh {
-    width: 100%;
     font-size: 2rem;
-    animation: spin 5s infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
 }
 
 @keyframes spin {
-    0% {
+    from {
         transform: rotate(0deg);
     }
-    100% {
+    to {
         transform: rotate(360deg);
     }
 }

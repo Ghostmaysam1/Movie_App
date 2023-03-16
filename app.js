@@ -12,7 +12,7 @@ searchBtn.addEventListener('click', () => {
     const API_Key = "8e9dfe44&t";
 
     if (Title != "" && Title != " " && Title != "  " && Title != "   " && Title != "    " && Title != "     ") {
-        $.querySelector('#Name').innerHTML = `<span class="material-symbols-outlined refresh">
+        $.querySelector('#Name').innerHTML = `<span style="color: #fff" class="material-symbols-outlined refresh">
         refresh
         </span>`;
         $.querySelector('#Plot').innerHTML = `<span class="material-symbols-outlined refresh">
