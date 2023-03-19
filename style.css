@@ -32,6 +32,7 @@ body .App {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .App .search-box {
@@ -47,6 +48,7 @@ body .App {
     height: 35px;
     outline: none;
     color: #fff;
+    border: 2px inset;
     border-radius: 10rem;
     background-color: rgba(37, 37, 37, .8);
     padding: 5px 10px;
@@ -65,7 +67,6 @@ body .App {
     color: #fff;
     background-color: rgba(37, 37, 37, .8);
     border: 2px inset;
-    font-size: 20px;
     font-weight: 600;
     cursor: pointer;
 }
@@ -94,6 +95,7 @@ body .App {
     background-color: rgba(37, 37, 37, .8);
     border-radius: .5rem;
     padding: 5px;
+    border: 2px inset;
 }
 
 .App .container .box-container.bc-2 {
@@ -112,6 +114,7 @@ body .App {
     width: 100%;
     margin: 15px 0;
     display: block;
+    border-bottom: 1px solid;
 }
 
 .App .container .box-container.bc-1 table tr th {
@@ -132,6 +135,7 @@ body .App {
     width: 100%;
     background-color: rgba(37, 37, 37, .8);
     position: relative;
+    border: 2px inset;
 }
 
 .App .container .box-container .box.title {
@@ -160,20 +164,25 @@ body .App {
 
 
 .refresh {
+    display: block;
+    width: 30px;
+    height: 30px;
     font-size: 2rem;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: scale(3);
     border-radius: 50%;
     animation: spin 2s linear infinite;
+    border: 5px solid yellow;
+    border-bottom: 5px solid transparent;
 }
 
 @keyframes spin {
     from {
-        transform: rotate(0deg);
+        transform: translate(-50%,-50%) rotate(0deg);
     }
     to {
-        transform: rotate(360deg);
+        transform: translate(-50%,-50%) rotate(360deg);
     }
 }

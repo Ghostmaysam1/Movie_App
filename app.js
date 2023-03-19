@@ -11,13 +11,11 @@ searchBtn.addEventListener('click', () => {
     const Title = search.value;
     const API_Key = "8e9dfe44&t";
 
+    let refresh = `<span style="color: #fff" class="refresh"></span>`;
+
     if (Title != "" && Title != " " && Title != "  " && Title != "   " && Title != "    " && Title != "     ") {
-        $.querySelector('#Name').innerHTML = `<span style="color: #fff" class="material-symbols-outlined refresh">
-        refresh
-        </span>`;
-        $.querySelector('#Plot').innerHTML = `<span class="material-symbols-outlined refresh">
-        refresh
-        </span>`;
+        $.querySelector('#Name').innerHTML = refresh;
+        $.querySelector('#Plot').innerHTML = refresh;
         fetch(`http://www.omdbapi.com/?apikey=${API_Key}&t=${Title}`)
             .then(Response => Response.json())
             .then(json => {
